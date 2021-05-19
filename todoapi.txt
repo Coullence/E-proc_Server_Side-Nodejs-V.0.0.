@@ -1,0 +1,87 @@
+//Invoice generation
+
+//Register supplier
+//get suppliers qul=otation
+//place particular order on particular supplier.
+
+//how supplier is registared
+
+//open tender
+> vendor bindings
+> vendor approval >> be supplier
+
+open Tender will cary
+- Item Category
+- Item Name
+- Quotation
+- userId(vendor)
+
+close tender 
+- Item Category
+- Item Name
+- unit Pricing
+- Supplier ID
+
+Tender
+- Tender Status  (Open)->(closed)
+- Categoryid 
+- Item Name
+- Item Quantity
+- Unit Pricing  (nullable)
+- Supplier Id   (nullable)
+- Quotation     (nullable)
+- Vendor Id     (nullable)
+
+Creating A tender means
+-> Select a category or
+-> Create a category
+-> use category to create a tender
+
+Create tender
+- Tender Status  (Open)->(closed)
+- CategoryId
+- Item Name
+- Item Quantity
+
+vendor submit quotation
+- Tender Status  (Open)->(closed)
+- Item Category  
+- Item Name
+- Item Quantity
+- Unit Pricing
+- Quotation
+- Vendor Id
+
+Tender Binding Request Approved
+- Tender Status  (closed)
+- Item Category  
+- Item Name
+- Item Quantity
+- Stock Status  
+- Unit Pricing  
+- Supplier Id   
+- Quotation     
+- Vendor Id     
+
+on Vendor approval fill this collection Items
+- itemName
+- itemQuantity(null)
+- itemUnitPrice
+- stockStatus (null)
+- categoryId 
+- supplierId
+
+on Item Request fill this collection
+
+
+
+supplier details
+Company Name
+Company Telephone
+Company Mail
+Company ISO
+Company Pin(pdf)
+Company Physical Address
+Company Postal Address
+userForeignId
+

@@ -1,0 +1,13 @@
+﻿{
+    "connectionString": "mongodb://localhost/procuxcntDB1",
+    "secret": "THIS IS USED TO SIGN AND VERIFY JWT TOKENS, REPLACE IT WITH YOUR OWN SECRET, IT CAN BE ANY STRING",
+    "emailFrom": "sandbox@biscript.com",
+    "smtpOptions": {
+        "host": "mail.biscript.com",
+        "port":  465,
+        "auth": {
+            "user": "sandbox@biscript.com",
+            "pass": "?Coullence12"
+        }
+    }
+}
